@@ -2,6 +2,10 @@
 ******SKILLS******
 *****************/
 
+.skills {
+  grid-template-columns: auto;
+}
+
 .skills__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -32,6 +36,11 @@
 
 .skills-icon {
   width: 3.4rem;
+  animation: jump 1s infinite alternate ease-in-out;
+  fill: var(--color-text);
+}
+
+.tailwind {
   animation: jump 1s infinite alternate ease-in-out;
   fill: var(--color-text);
 }

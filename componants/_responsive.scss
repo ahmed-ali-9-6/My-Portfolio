@@ -41,20 +41,23 @@
     order: 1;
   }
 
-  .reorder-lasles-data {
+  .reorder-ecommerce-data {
     grid-row: 2 / 3;
   }
-
-  .reorder-clipboard-data {
+  .reorder-lasles-data {
     grid-row: 6 / 7;
   }
 
-  .reorder-note-data {
+  .reorder-clipboard-data {
     grid-row: 10 / 11;
   }
 
-  .reorder-leon-data {
+  .reorder-note-data {
     grid-row: 14 / 15;
+  }
+
+  .reorder-leon-data {
+    grid-row: 18 / 19;
   }
 
   .clients__opinions {
