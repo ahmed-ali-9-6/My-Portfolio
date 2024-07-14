@@ -31,33 +31,13 @@
     padding: 4rem 0rem;
   }
 
-  .projects__main {
-    grid-template-columns: 1fr;
-    row-gap: 6rem;
-    justify-items: center;
+  .project {
+    flex-direction: column;
+    gap: 3rem;
   }
 
-  .projects__data:nth-of-type(2) {
-    order: 1;
-  }
-
-  .reorder-ecommerce-data {
-    grid-row: 2 / 3;
-  }
-  .reorder-lasles-data {
-    grid-row: 6 / 7;
-  }
-
-  .reorder-clipboard-data {
-    grid-row: 10 / 11;
-  }
-
-  .reorder-note-data {
-    grid-row: 14 / 15;
-  }
-
-  .reorder-leon-data {
-    grid-row: 18 / 19;
+  .reorder-data {
+    order: 2;
   }
 
   .clients__opinions {

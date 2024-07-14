@@ -415,11 +415,14 @@ header::before {
 ****PROJECTS****
 *****************/
 .projects__main {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  -moz-column-gap: 7.4rem;
-       column-gap: 7.4rem;
-  row-gap: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7.5rem;
+}
+
+.project {
+  display: flex;
+  gap: 7.5rem;
 }
 
 .projects__img {
@@ -432,6 +435,16 @@ header::before {
   width: 3.5rem;
   height: 3.7rem;
   animation: jump 1s infinite alternate ease-in-out;
+}
+
+.bondi-title {
+  display: flex;
+  gap: 1rem;
+}
+
+.bondi-icon {
+  width: 50px;
+  height: 50px;
 }
 
 .img-box {
@@ -454,8 +467,18 @@ header::before {
   border-radius: 0.5rem;
 }
 
+.box {
+  width: 100%;
+}
+
+.quran-box {
+  display: flex;
+  justify-content: center;
+}
+
 .projects__data {
   align-self: center;
+  flex-basis: fit-content;
 }
 
 .projects__description {
@@ -490,10 +513,9 @@ header::before {
   background-color: #ffffff;
   color: black;
   transition: all 0.4s;
-  grid-column: 1/-1;
   width: 30rem;
   text-align: center;
-  justify-self: center;
+  align-self: center;
   box-shadow: 0px 6px 8px 0px #999;
 }
 
@@ -622,28 +644,12 @@ html:has(.toggle__checkbox:checked) {
   .skills__item {
     padding: 4rem 0rem;
   }
-  .projects__main {
-    grid-template-columns: 1fr;
-    row-gap: 6rem;
-    justify-items: center;
+  .project {
+    flex-direction: column;
+    gap: 3rem;
   }
-  .projects__data:nth-of-type(2) {
-    order: 1;
-  }
-  .reorder-ecommerce-data {
-    grid-row: 2/3;
-  }
-  .reorder-lasles-data {
-    grid-row: 6/7;
-  }
-  .reorder-clipboard-data {
-    grid-row: 10/11;
-  }
-  .reorder-note-data {
-    grid-row: 14/15;
-  }
-  .reorder-leon-data {
-    grid-row: 18/19;
+  .reorder-data {
+    order: 2;
   }
   .clients__opinions {
     font-size: var(--font-size-24);

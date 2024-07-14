@@ -4,7 +4,6 @@ const observeElements = (sectionElements) => {
   const options = {threshold: 0.3};
 
   const callback = (entries) => {
-    console.log(entries);
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("in-view");
