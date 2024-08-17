@@ -73,7 +73,7 @@ ul {
 }
 
 body,
-[type=submit] {
+[type="submit"] {
   font-size: 1.6rem;
   font-family: var(--font-family-raleway);
   background-color: var(--color-background);
@@ -107,11 +107,15 @@ body,
   grid-template-columns: repeat(2, auto);
   align-items: start;
   position: relative;
+}
+
+.target {
   opacity: 0;
   transform: translateY(1rem);
   transition: all 0.3s ease-in-out;
 }
-.section.in-view {
+
+.target.in-view {
   opacity: 1;
   transform: translateY(0);
 }
@@ -259,7 +263,7 @@ header::before {
 .bio {
   grid-template-columns: repeat(2, 1fr);
   -moz-column-gap: 7.4rem;
-       column-gap: 7.4rem;
+  column-gap: 7.4rem;
   row-gap: 0;
 }
 
@@ -369,8 +373,8 @@ header::before {
 .skills__item {
   transition: var(--transition-timing);
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   padding: 5rem 3rem;
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
   border-radius: 0.8rem;
@@ -529,7 +533,7 @@ header::before {
 .contact {
   grid-template-columns: repeat(2, 1fr);
   -moz-column-gap: 20rem;
-       column-gap: 20rem;
+  column-gap: 20rem;
   row-gap: 0;
   align-items: center;
   justify-items: center;
@@ -723,4 +727,4 @@ html:has(.toggle__checkbox:checked) {
 }
 /****************
 **END RESPONSIVE**
-*****************//*# sourceMappingURL=style.css.map */
+*****************/ /*# sourceMappingURL=style.css.map */
