@@ -432,6 +432,10 @@ header::before {
 /****************
 ****PROJECTS****
 *****************/
+.projects {
+  overflow-x: hidden;
+}
+
 .projects__main {
   display: flex;
   flex-direction: column;
@@ -535,6 +539,7 @@ header::before {
   text-align: center;
   align-self: center;
   box-shadow: 0px 6px 8px 0px #999;
+  margin-bottom: 2rem;
 }
 
 .explore-link:hover {
@@ -642,6 +647,9 @@ html:has(.toggle__checkbox:checked) {
 @media (max-width: 1000px) {
   html {
     font-size: 8px;
+  }
+  header::before {
+    width: 100vw;
   }
 }
 @media (max-width: 800px) {
