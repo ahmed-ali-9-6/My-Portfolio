@@ -1,4 +1,5 @@
 const targetElements = document.querySelectorAll(".target");
+const observeProjectElements = document.querySelectorAll(".observe-project");
 const observeElements = (targetElements) => {
   const options = {threshold: 0.3};
 
@@ -17,6 +18,7 @@ const observeElements = (targetElements) => {
 };
 
 observeElements(targetElements);
+observeElements(observeProjectElements);
 
 const footerYear = document.querySelector(".footer-year");
 const currentYear = new Date().getFullYear();

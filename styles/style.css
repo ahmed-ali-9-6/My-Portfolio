@@ -115,9 +115,23 @@ body,
   transition: all 0.3s ease-in-out;
 }
 
-.target.in-view {
+.observe-project {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.left-content {
+  transform: translateX(-100px);
+}
+
+.right-content {
+  transform: translateX(100px);
+}
+
+.in-view {
   opacity: 1;
   transform: translateY(0);
+  transform: translateX(0);
 }
 
 .section--with-bg {
